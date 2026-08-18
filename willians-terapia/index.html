@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Willians Barbosa — Psicoterapeuta | Espaço seguro para transformação</title>
+<meta name="description" content="Terapia individual para adultos que enfrentam ansiedade, burnout e esgotamento emocional. Agende sua conversa inicial com Willians Barbosa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+--sage-50:#f4f7f5;--sage-100:#e6ede9;--sage-200:#cddbd3;--sage-300:#a8c1b3;--sage-400:#7fa391;--sage-500:#5f8773;--sage-600:#4c6d5d;--sage-700:#3d574b;--sage-800:#33463d;--sage-900:#2b3b34;
+--sand-50:#faf8f5;--sand-100:#f3efe8;--sand-200:#e8e0d4;--sand-300:#d4c8b6;--sand-400:#b8a68e;
+--tp:#2b3b34;--ts:#5a6b62;--tt:#8a9990;--ti:#faf8f5;
+--bg:#faf8f5;--bg2:#f4f7f5;--bgd:#2b3b34;
+--bl:#e8e0d4;--bs:#cddbd3; --rs:8px;--rm:16px;--rl:24px;--rf:9999px;
+--ss:0 1px 3px rgba(43,59,52,.06),0 1px 2px rgba(43,59,52,.04);
+--sm:0 4px 12px rgba(43,59,52,.08),0 2px 4px rgba(43,59,52,.04);
+--sl:0 12px 40px rgba(43,59,52,.1),0 4px 12px rgba(43,59,52,.05);
+--sx:0 24px 60px rgba(43,59,52,.12),0 8px 20px rgba(43,59,52,.06);
+--e:cubic-bezier(.4,0,.2,1);--es:cubic-bezier(.34,1.56,.64,1);
+--bmin:80px;--bmax:180px;--bglow:rgba(127,163,145,.2)
+}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;font-weight:400;color:var(--tp);background:var(--bg);line-height:1.7;font-size:16px;overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.2;color:var(--tp)}
+a{text-decoration:none;color:inherit;transition:color .2s var(--e)}
+img{max-width:100%;display:block}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+.c{max-width:1120px;margin:0 auto;padding:0 24px}
+
+@keyframes fiu{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+@keyframes si{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:scale(1)}}
+@keyframes br{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+@keyframes pr{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.8);opacity:0}}
+@keyframes fg{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+.a{opacity:0;transform:translateY(28px);transition:opacity .7s var(--e),transform .7s var(--e)}
+.a.v{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 0;transition:all .3s var(--e);background:transparent}
+.nav.sc{background:rgba(250,248,245,.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:10px 0;box-shadow:0 1px 0 rgba(43,59,52,.06)}
+.ni{display:flex;align-items:center;justify-content:space-between}
+.nb{display:flex;align-items:center;gap:12px}
+.nl{width:36px;height:36px;border-radius:var(--rs);background:var(--sage-600);display:flex;align-items:center;justify-content:center;transition:transform .5s var(--es)}
+.nl:hover{transform:rotate(-8deg) scale(1.05)}
+.nl svg{width:18px;height:18px;fill:none;stroke:var(--ti);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.nn{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:var(--tp);letter-spacing:-.01em}
+.ns{font-size:.7rem;font-weight:400;color:var(--tt);letter-spacing:.04em;text-transform:uppercase;display:block;margin-top:-2px}
+.nls{display:flex;align-items:center;gap:32px;list-style:none}
+.nk{font-size:.875rem;font-weight:500;color:var(--ts);position:relative;padding:4px 0;transition:color .2s var(--e)}
+.nk::after{content:'';position:absolute;bottom:-1px;left:0;width:0;height:1.5px;background:var(--sage-600);border-radius:2px;transition:width .3s var(--e)}
+.nk:hover{color:var(--tp)}.nk:hover::after{width:100%}
+.nc{font-size:.85rem;font-weight:500;color:var(--ti);background:var(--sage-600);padding:9px 22px;border-radius:var(--rf);transition:all .3s var(--e);box-shadow:var(--ss)}
+.nc:hover{background:var(--sage-700);transform:translateY(-1px);box-shadow:var(--sm)}.nc:active{transform:translateY(0)}
+.nt{display:none;flex-direction:column;gap:5px;padding:8px}
+.nt span{display:block;width:20px;height:2px;background:var(--tp);border-radius:2px;transition:all .3s var(--e)}
+.nt.o span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}.nt.o span:nth-child(2){opacity:0}.nt.o span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.mm{display:none;position:fixed;inset:0;z-index:99;background:rgba(250,248,245,.97);backdrop-filter:blur(20px);flex-direction:column;align-items:center;justify-content:center;gap:32px;opacity:0;transition:opacity .3s var(--e)}
+.mm.o{display:flex;opacity:1}
+.mm a{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:500;color:var(--tp);transition:color .2s var(--e)}.mm a:hover{color:var(--sage-600)}
+
+/* HERO */
+.hero{padding:140px 0 80px;min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden}
+.hb{position:absolute;border-radius:50%;filter:blur(80px);opacity:.35;pointer-events:none}
+.hb1{width:500px;height:500px;background:var(--sage-200);top:-100px;right:-100px;animation:fg 8s ease-in-out infinite}
+.hb2{width:350px;height:350px;background:var(--sand-200);bottom:-50px;left:-80px;animation:fg 10s ease-in-out infinite reverse}
+.hg{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;position:relative;z-index:1}
+.hc{animation:fiu .8s var(--e) both}
+.hbd{display:inline-flex;align-items:center;gap:8px;padding:6px 16px 6px 8px;background:var(--sage-100);border:1px solid var(--sage-200);border-radius:var(--rf);font-size:.8rem;font-weight:500;color:var(--sage-700);margin-bottom:28px}
+.hd{width:8px;height:8px;background:var(--sage-500);border-radius:50%;animation:br 3s ease-in-out infinite}
+.ht{font-size:clamp(2.6rem,5vw,3.8rem);font-weight:600;letter-spacing:-.02em;line-height:1.12;margin-bottom:20px}
+.ht i{color:var(--sage-600);font-style:italic}
+.hs{font-size:1.1rem;line-height:1.7;color:var(--ts);margin-bottom:40px;max-width:480px}
+.hcta{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.bp{display:inline-flex;align-items:center;gap:10px;padding:16px 32px;background:var(--sage-600);color:var(--ti);font-size:1rem;font-weight:500;border-radius:var(--rf);transition:all .3s var(--e);box-shadow:0 4px 16px rgba(76,109,93,.25);position:relative;overflow:hidden}
+.bp::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.15),transparent);opacity:0;transition:opacity .2s var(--e)}
+.bp:hover{background:var(--sage-700);transform:translateY(-2px);box-shadow:0 8px 24px rgba(76,109,93,.3)}.bp:hover::before{opacity:1}
+.bp:active{transform:translateY(0);box-shadow:0 2px 8px rgba(76,109,93,.2)}
+.bp svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .3s var(--e)}.bp:hover svg{transform:translateX(3px)}
+.bse{display:inline-flex;align-items:center;gap:8px;padding:16px 28px;background:transparent;color:var(--tp);font-size:1rem;font-weight:500;border-radius:var(--rf);border:1.5px solid var(--bl);transition:all .3s var(--e)}
+.bse:hover{border-color:var(--sage-400);background:var(--sage-50);transform:translateY(-1px)}.bse:active{transform:translateY(0)}
+.bse svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.hic{position:relative;animation:si .9s var(--e) .2s both}
+.hi{position:relative;border-radius:var(--rl);overflow:hidden;box-shadow:var(--sx);aspect-ratio:4/5}
+.hi img{width:100%;height:100%;object-fit:cover;transition:transform 6s var(--e)}.hi:hover img{transform:scale(1.05)}
+.hi::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(43,59,52,.15),transparent 50%);pointer-events:none}
+.hcd{position:absolute;background:#fff;border-radius:var(--rm);padding:16px 20px;box-shadow:var(--sl);display:flex;align-items:center;gap:12px;z-index:2}
+.hcd1{bottom:-16px;left:-24px;animation:fg 5s ease-in-out infinite}
+.hcd2{top:24px;right:-20px;animation:fg 5s ease-in-out infinite reverse}
+.hci{width:40px;height:40px;border-radius:var(--rs);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.hci svg{width:20px;height:20px;fill:none;stroke:var(--sage-600);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.hct strong{display:block;font-weight:600;color:var(--tp);font-size:.85rem}.hct span{font-size:.78rem;color:var(--tt)}
+
+/* TRUST */
+.trust{padding:40px 0;border-bottom:1px solid var(--bl)}
+.ti{display:flex;align-items:center;justify-content:center;gap:48px;flex-wrap:wrap}
+.tit{display:flex;align-items:center;gap:10px;font-size:.85rem;color:var(--tt);font-weight:500}
+.tit svg{width:18px;height:18px;fill:none;stroke:var(--sage-500);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+
+/* SECTIONS */
+.sec{padding:100px 0}.sa{background:var(--bg2)}
+.sh{text-align:center;margin-bottom:64px}
+.sl{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--sage-600);margin-bottom:16px}
+.st{font-size:clamp(2rem,3.5vw,2.8rem);letter-spacing:-.02em;margin-bottom:16px}
+.sd{font-size:1.05rem;color:var(--ts);max-width:600px;margin:0 auto;line-height:1.7}
+
+/* CARDS (Pain Points) */
+.pg{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.pc{padding:36px 28px;background:#fff;border-radius:var(--rm);border:1px solid var(--bl);transition:all .3s var(--e);position:relative;overflow:hidden}
+.pc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--sage-400);transform:scaleX(0);transition:transform .3s var(--e);transform-origin:left}
+.pc:hover{transform:translateY(-4px);box-shadow:var(--sl);border-color:var(--sage-200)}.pc:hover::before{transform:scaleX(1)}
+.pci{width:48px;height:48px;border-radius:var(--rs);background:var(--sage-50);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.pci svg{width:24px;height:24px;fill:none;stroke:var(--sage-600);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.pct{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:600;margin-bottom:10px}
+.pcx{font-size:.92rem;line-height:1.65;color:var(--ts)}
+
+/* FEELING SELECTOR */
+.fl{text-align:center;margin-top:48px}
+.fp{font-size:1rem;color:var(--ts);margin-bottom:16px;font-style:italic}
+.ft{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;transition:opacity .3s, transform .3s}
+.fg{padding:10px 20px;border:1px solid var(--sage-300);border-radius:var(--rf);font-size:.9rem;color:var(--sage-700);background:transparent;transition:all .2s}
+.fg:hover{background:var(--sage-50);border-color:var(--sage-400)}
+.ft.h{opacity:0;transform:translateY(-10px);pointer-events:none;height:0;overflow:hidden}
+.fr{opacity:0;transform:translateY(10px);transition:all .3s;margin-top:20px}
+.fr.v{opacity:1;transform:translateY(0)}
+.frt{font-size:1.05rem;color:var(--tp);line-height:1.6;max-width:500px;margin:0 auto 12px}
+.frs{font-size:.85rem;color:var(--sage-600);text-decoration:underline;cursor:pointer}
+
+/* PROCESS / STEPS */
+.sps{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;position:relative}
+.sp{text-align:center;padding:32px 24px}
+.spn{width:48px;height:48px;border-radius:50%;background:var(--sage-600);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600}
+.spt{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;margin-bottom:12px}
+.spx{font-size:.9rem;color:var(--ts);line-height:1.6}
+
+/* BREATHING EXERCISE */
+.breath{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:400px;position:relative}
+.bwr{position:relative;width:200px;height:200px;display:flex;align-items:center;justify-content:center}
+.bwc{width:var(--bmin);height:var(--bmin);background:var(--sage-100);border-radius:50%;transition:width 4s ease-in-out, height 4s ease-in-out;position:relative;z-index:2;display:flex;align-items:center;justify-content:center}
+.bwc.hold{transition:width 0s, height 0s}
+.bwc.exhale{transition:width 8s ease-in-out, height 8s ease-in-out}
+.bwg{position:absolute;inset:0;border-radius:50%;background:var(--sage-200);opacity:0;transition:opacity 1s}.bwg.act{opacity:.5}
+.bwp{margin-top:32px;font-size:1.2rem;font-family:'Cormorant Garamond',serif;color:var(--sage-700);min-height:30px}
+.bwt{font-size:.9rem;color:var(--tt);margin-top:8px;min-height:20px}
+.bws{margin-top:24px;padding:14px 32px;background:var(--sage-600);color:#fff;border-radius:var(--rf);font-size:1rem;transition:all .2s}
+.bws:hover{background:var(--sage-700)}.bws.run{opacity:0;pointer-events:none}
+.bwa{margin-top:40px;text-align:center;opacity:0;transform:translateY(20px);transition:all .5s}.bwa.v{opacity:1;transform:translateY(0)}
+.bwat{font-size:1.1rem;color:var(--ts);margin-bottom:20px;font-style:italic}
+
+/* THERAPIST BIO */
+.ag{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.aiw{position:relative}
+.aim{border-radius:var(--rl);overflow:hidden;box-shadow:var(--sl);aspect-ratio:3/4}
+.aim img{width:100%;height:100%;object-fit:cover}
+.aid{position:absolute;inset:8px;border:2px solid var(--sage-300);border-radius:var(--rl);pointer-events:none;opacity:.5}
+.alb{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--sage-600);margin-bottom:16px}
+.at2{font-size:clamp(1.8rem,2.5vw,2.4rem);letter-spacing:-.02em;margin-bottom:20px}
+.atx{font-size:.95rem;line-height:1.7;color:var(--ts);margin-bottom:16px}
+.atgs{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.atg{padding:6px 16px;background:var(--sage-50);border:1px solid var(--sage-200);border-radius:var(--rf);font-size:.8rem;color:var(--sage-700);font-weight:500}
+
+/* TESTIMONIALS */
+.tg{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.tc{background:#fff;border:1px solid var(--bl);border-radius:var(--rm);padding:32px;transition:all .3s}.tc:hover{transform:translateY(-4px);box-shadow:var(--sl)}
+.tcs{display:flex;gap:4px;margin-bottom:16px}
+.tcs svg{width:18px;height:18px;fill:var(--sand-400);stroke:none}
+.tcq{font-size:.95rem;line-height:1.7;color:var(--ts);margin-bottom:24px;font-style:italic}
+.tca{display:flex;align-items:center;gap:12px}
+.tcav{width:40px;height:40px;border-radius:50%;background:var(--sage-100);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:var(--sage-600)}
+.tcn{font-weight:600;color:var(--tp);font-size:.9rem}
+.tcd{font-size:.8rem;color:var(--tt)}
+
+/* FAQ */
+.fql{max-width:720px;margin:0 auto}
+.fqi{border-bottom:1px solid var(--bl);overflow:hidden}.fqi:first-child{border-top:1px solid var(--bl)}
+.fqq{width:100%;display:flex;align-items:center;justify-content:space-between;padding:24px 0;font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;color:var(--tp);text-align:left;gap:16px;transition:color .2s var(--e)}.fqq:hover{color:var(--sage-600)}
+.fqic{width:28px;height:28px;border-radius:50%;background:var(--sage-50);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .3s var(--e)}
+.fqi.op .fqic{background:var(--sage-600);transform:rotate(45deg)}
+.fqic svg{width:14px;height:14px;fill:none;stroke:var(--sage-600);stroke-width:2;stroke-linecap:round;transition:stroke .2s var(--e)}.fqi.op .fqic svg{stroke:#fff}
+.fqa{max-height:0;overflow:hidden;transition:max-height .4s var(--e),padding .4s var(--e)}.fqi.op .fqa{max-height:300px;padding-bottom:24px}
+.fqa p{font-size:.95rem;line-height:1.7;color:var(--ts)}
+
+/* OTHER SERVICES */
+.og{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.oc{padding:28px 24px;background:#fff;border-radius:var(--rm);border:1px solid var(--bl);transition:all .3s var(--e)}.oc:hover{transform:translateY(-2px);box-shadow:var(--sm)}
+.oci{width:44px;height:44px;border-radius:var(--rs);background:var(--sage-50);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.oci svg{width:22px;height:22px;fill:none;stroke:var(--sage-500);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.oct{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;margin-bottom:8px}
+.ocx{font-size:.88rem;line-height:1.6;color:var(--ts);margin-bottom:20px}
+.ocl{font-size:.82rem;font-weight:500;color:var(--sage-600);display:inline-flex;align-items:center;gap:6px;transition:all .2s var(--e)}.ocl:hover{color:var(--sage-700)}.ocl:hover span{transform:translateX(2px)}.ocl span{display:inline-block;transition:transform .2s var(--e)}
+
+/* SCHEDULING */
+.sg{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.sgt{font-size:clamp(1.6rem,2.5vw,2.2rem);letter-spacing:-.02em;margin-bottom:16px}
+.sgx{font-size:.98rem;line-height:1.7;color:var(--ts);margin-bottom:28px}
+.sgl{list-style:none;display:flex;flex-direction:column;gap:14px;margin-bottom:32px}
+.sgl li{display:flex;align-items:center;gap:12px;font-size:.92rem;color:var(--ts)}
+.sgl li svg{width:20px;height:20px;fill:none;stroke:var(--sage-500);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.scd{background:#fff;border-radius:var(--rl);border:1px solid var(--bl);padding:40px;box-shadow:var(--sl);text-align:center}
+.scl{font-size:.78rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--sage-600);margin-bottom:12px}
+.sct2{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;margin-bottom:8px}
+.scp{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:600;color:var(--sage-600);margin-bottom:4px}
+.scn{font-size:.82rem;color:var(--tt);margin-bottom:28px}
+.scl2{list-style:none;text-align:left;margin-bottom:28px;display:flex;flex-direction:column;gap:12px}
+.scl2 li{display:flex;align-items:center;gap:10px;font-size:.88rem;color:var(--ts)}
+.scl2 li svg{width:16px;height:16px;fill:none;stroke:var(--sage-500);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+
+/* CTA SECTION */
+.cts{padding:100px 0;background:var(--sage-800);position:relative;overflow:hidden}
+.ctsb{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(95,135,115,.15),transparent 70%);pointer-events:none}
+.ctsi{text-align:center;position:relative;z-index:1}
+.ctsl{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--sage-300);margin-bottom:20px}
+.ctst{font-size:clamp(2rem,3.5vw,2.8rem);color:var(--ti);letter-spacing:-.02em;margin-bottom:16px}
+.ctsd{font-size:1.05rem;color:var(--sage-300);max-width:520px;margin:0 auto 40px;line-height:1.7}
+.bct{display:inline-flex;align-items:center;gap:12px;padding:20px 40px;background:#fff;color:var(--sage-800);font-size:1.05rem;font-weight:600;border-radius:var(--rf);transition:all .3s var(--e);box-shadow:0 8px 32px rgba(0,0,0,.15)}
+.bct:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 16px 48px rgba(0,0,0,.2);background:var(--sand-50)}.bct:active{transform:translateY(0) scale(.98)}
+.bct svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .3s var(--e)}.bct:hover svg{transform:translateX(4px)}
+.ctss{margin-top:16px;font-size:.85rem;color:var(--sage-400)}
+
+/* FOOTER */
+.foot{padding:60px 0 32px;background:var(--sage-900);color:var(--sage-300)}
+.fg2{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.fb{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--ti);margin-bottom:12px}
+.fbs{font-size:.82rem;color:var(--sage-400);line-height:1.65;max-width:280px}
+.fct{font-size:.78rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--sage-400);margin-bottom:16px}
+.fls{list-style:none;display:flex;flex-direction:column;gap:10px}
+.fls a{font-size:.88rem;color:var(--sage-300);transition:color .2s var(--e)}.fls a:hover{color:#fff}
+.fbot{padding-top:24px;border-top:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.fcp{font-size:.78rem;color:var(--sage-500)}
+.fle{display:flex;gap:24px}.fle a{font-size:.78rem;color:var(--sage-500);transition:color .2s var(--e)}.fle a:hover{color:var(--sage-300)}
+
+/* WHATSAPP */
+.wa{position:fixed;bottom:28px;right:28px;z-index:90;display:flex;align-items:center;gap:12px}
+.wat{background:#fff;padding:10px 16px;border-radius:var(--rm);box-shadow:var(--sl);font-size:.82rem;font-weight:500;color:var(--tp);white-space:nowrap;opacity:0;transform:translateX(12px);transition:all .3s var(--e);pointer-events:none}
+.wa:hover .wat{opacity:1;transform:translateX(0)}
+.wab{width:60px;height:60px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(37,211,102,.35);transition:all .3s var(--e);position:relative}
+.wab::before{content:'';position:absolute;inset:-4px;border-radius:50%;background:rgba(37,211,102,.3);animation:pr 2.5s ease-out infinite}
+.wab:hover{transform:scale(1.1);box-shadow:0 8px 32px rgba(37,211,102,.4)}.wab:active{transform:scale(.95)}
+.wab svg{width:28px;height:28px;fill:#fff;position:relative;z-index:1}
+
+/* LGPD */
+.lgpd{position:fixed;bottom:0;left:0;right:0;z-index:95;background:var(--sage-900);color:var(--sage-300);padding:16px 24px;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;box-shadow:0 -4px 20px rgba(0,0,0,.1);transform:translateY(100%);transition:transform .5s var(--e)}
+.lgpd.sh{transform:translateY(0)}
+.lgt{font-size:.82rem;line-height:1.5;max-width:600px}.lgt a{color:var(--sage-300);text-decoration:underline;text-underline-offset:2px}.lgt a:hover{color:#fff}
+.lgo{padding:8px 20px;background:var(--sage-500);color:#fff;font-size:.82rem;font-weight:500;border-radius:var(--rf);transition:all .2s var(--e);white-space:nowrap}.lgo:hover{background:var(--sage-400)}
+
+/* MODALS */
+.mob{position:fixed;inset:0;z-index:200;background:rgba(43,59,52,.5);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;pointer-events:none;transition:opacity .3s var(--e)}
+.mob.op{opacity:1;pointer-events:auto}
+.mod{background:#fff;border-radius:var(--rl);padding:40px;max-width:640px;width:100%;max-height:80vh;overflow-y:auto;box-shadow:var(--sx);transform:scale(.95) translateY(16px);transition:transform .3s var(--e)}
+.mob.op .mod{transform:scale(1) translateY(0)}
+.moc{float:right;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background .2s var(--e)}.moc:hover{background:var(--sage-50)}
+.moc svg{width:18px;height:18px;fill:none;stroke:var(--ts);stroke-width:2;stroke-linecap:round}
+.mot{font-size:1.6rem;margin-bottom:20px;letter-spacing:-.01em}
+.mox{font-size:.92rem;line-height:1.75;color:var(--ts)}
+.mox h3{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:var(--tp);margin:20px 0 8px}
+.mox p{margin-bottom:12px}
+
+/* RESPONSIVE */
+@media(prefers-reduced-motion:reduce){
+.bwc,.bwg,.bwa,.ft,.fr,.fg,.a{transition:none!important}
+.a{opacity:1!important;transform:none!important}
+}
+@media(max-width:1024px){
+.hg{gap:40px}.pg{grid-template-columns:repeat(2,1fr)}.tg{grid-template-columns:repeat(2,1fr)}.fg2{grid-template-columns:repeat(2,1fr)}.og{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+.sec{padding:72px 0}.nls,.ncd{display:none}.nt{display:flex}
+.hero{padding:120px 0 60px;min-height:auto}.hg{grid-template-columns:1fr;gap:40px;text-align:center}.hs{margin-left:auto;margin-right:auto}.hcta{justify-content:center}.hic{max-width:360px;margin:0 auto}.hcd1{left:-8px;bottom:-12px}.hcd2{right:-8px}
+.pg{grid-template-columns:1fr}.sps{grid-template-columns:1fr;gap:32px}
+.ag{grid-template-columns:1fr;gap:40px}.aiw{max-width:360px;margin:0 auto}
+.tg{grid-template-columns:1fr}.sg{grid-template-columns:1fr}
+.fg2{grid-template-columns:1fr;gap:32px}.fbot{flex-direction:column;text-align:center}
+.wa{bottom:20px;right:20px}.wat{display:none}.wab{width:56px;height:56px}
+.lgpd{flex-direction:column;text-align:center}
+.og{grid-template-columns:1fr;max-width:400px;margin-left:auto;margin-right:auto}
+.breath{min-height:300px}.bwp{font-size:1.1rem}
+}
+@media(max-width:480px){
+.c{padding:0 16px}.hcta{flex-direction:column;width:100%}.bp,.bse{width:100%;justify-content:center}.hcd{display:none}.mod{padding:28px 20px}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+<div class="c"><div class="ni">
+<a href="#" class="nb"><div class="nl"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></div><div><span class="nn">Willians Barbosa</span><span class="ns">Psicoterapeuta</span></div></a>
+<ul class="nls"><li><a href="#sobre" class="nk">Sobre</a></li><li><a href="#processo" class="nk">Processo</a></li><li><a href="#depoimentos" class="nk">Depoimentos</a></li><li><a href="#faq" class="nk">FAQ</a></li></ul>
+<a href="#agendar" class="nc ncd">Agendar conversa</a>
+<button class="nt" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</div></div>
+</nav>
+<div class="mm" id="mobileMenu">
+<a href="#sobre" onclick="closeMenu()">Sobre</a><a href="#processo" onclick="closeMenu()">Processo</a><a href="#depoimentos" onclick="closeMenu()">Depoimentos</a><a href="#faq" onclick="closeMenu()">FAQ</a><a href="#agendar" onclick="closeMenu()" class="bp" style="margin-top:16px">Agendar conversa</a>
+</div>
+
+<section class="hero">
+<div class="hb hb1"></div><div class="hb hb2"></div>
+<div class="c"><div class="hg">
+<div class="hc">
+<div class="hbd"><span class="hd"></span>Atendimento disponível — online e presencial</div>
+<h1 class="ht">Recupere sua paz de espírito com terapia <i>acolhedora</i> e eficaz</h1>
+<p class="hs">Um espaço seguro para adultos que enfrentam ansiedade, burnout e esgotamento emocional encontrarem caminhos para uma vida mais leve e significativa.</p>
+<div class="hcta">
+<a href="#agendar" class="bp">Agende sua conversa inicial<svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+<a href="#processo" class="bse">Como funciona<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></a>
+</div>
+</div>
+<div class="hic">
+<div class="hi"><img src="https://images.unsplash.com/photo-1503439234012-200cfe4c55bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Willians Barbosa — Psicoterapeuta" loading="eager"></div>
+<div class="hcd hcd1"><div class="hci" style="background:var(--sage-100)"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><div class="hct"><strong>+500 sessões realizadas</strong><span>Atendimento humanizado</span></div></div>
+<div class="hcd hcd2"><div class="hci" style="background:var(--sand-100)"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div class="hct"><strong>Atendimento individual</strong><span>100% personalizado</span></div></div>
+</div>
+</div></div>
+</section>
+
+<section class="trust"><div class="c"><div class="ti">
+<div class="tit"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>CRP 06/123456</div>
+<div class="tit"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Pós-graduação em TCC</div>
+<div class="tit"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Sigilo total garantido</div>
+<div class="tit"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Online e presencial</div>
+</div></div></section>
+
+<section class="sec sa" id="sobre">
+<div class="c">
+<div class="sh a"><div class="sl"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 15s1.5-2 4-2 4 2 4 2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>Você pode se identificar</div><h2 class="st">Sinais de que um espaço acolhedor pode fazer diferença</h2><p class="sd">Se você se reconhece em alguma dessas situações, a psicoterapia pode ser um caminho de cuidado e transformação.</p></div>
+<div class="pg">
+<div class="pc a d1"><div class="pci"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div><h3 class="pct">Ansiedade constante</h3><p class="pcx">Aquela sensação de que algo ruim pode acontecer a qualquer momento, dificultando o descanso e a presença no dia a dia.</p></div>
+<div class="pc a d2"><div class="pci"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></div><h3 class="pct">Esgotamento emocional</h3><p class="pcx">Sentir que não dá mais conta, como se as energias tivessem se esvaído — mesmo após descanso, a exaustão persiste.</p></div>
+<div class="pc a d3"><div class="pci"><svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></div><h3 class="pct">Sobrecarga no trabalho</h3><p class="pcx">Pressões e exigências que ultrapassam seus limites, gerando desânimo e sensação de incompetência — sinais de burnout.</p></div>
+<div class="pc a d1"><div class="pci"><svg viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg></div><h3 class="pct">Dificuldade nas relações</h3><p class="pcx">Conflitos recorrentes, dificuldade de se expressar ou sentir que não é compreendido pelas pessoas ao redor.</p></div>
+<div class="pc a d2"><div class="pci"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div><h3 class="pct">Busca por autoconhecimento</h3><p class="pcx">Desejo de entender padrões repetitivos, reconectar-se consigo mesmo e construir escolhas mais conscientes.</p></div>
+<div class="pc a d3"><div class="pci"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div><h3 class="pct">Sentimento de estagnação</h3><p class="pcx">Perceber que está preso em ciclos que não evoluem, sem encontrar sozinho uma saída que traga alívio genuíno.</p></div>
+</div>
+<div class="fl a d4" id="feeling">
+<p class="fp">Se pudesse nomear o que sente agora, qual palavra mais se aproxima?</p>
+<div class="ft" id="feelingTags">
+<button class="fg" data-feeling="ansiedade" onclick="selectFeeling(this)" aria-label="Selecionar sentimento: ansiedade">ansiedade</button>
+<button class="fg" data-feeling="exaustao" onclick="selectFeeling(this)" aria-label="Selecionar sentimento: exaustão">exaustão</button>
+<button class="fg" data-feeling="solidao" onclick="selectFeeling(this)" aria-label="Selecionar sentimento: solidão">solidão</button>
+<button class="fg" data-feeling="confusao" onclick="selectFeeling(this)" aria-label="Selecionar sentimento: confusão">confusão</button>
+<button class="fg" data-feeling="sobrecarga" onclick="selectFeeling(this)" aria-label="Selecionar sentimento: sobrecarga">sobrecarga</button>
+</div>
+<div class="fr" id="feelingResponse" role="status" aria-live="polite">
+<p class="frt" id="feelingResponseText"></p>
+<button class="frs" onclick="resetFeeling()" aria-label="Escolher outro sentimento">Escolher outra</button>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="processo">
+<div class="c">
+<div class="sh a"><div class="sl"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>Caminho terapêutico</div><h2 class="st">Como funciona o processo</h2><p class="sd">Três etapas simples para iniciar sua jornada de autocuidado e bem-estar emocional.</p></div>
+<div class="sps">
+<div class="sp a d1"><div class="spn">1</div><h3 class="spt">Conversa inicial</h3><p class="spx">Uma conversa acolhedora e sem compromisso, onde você compartilha o que te trouxe aqui e tira todas as suas dúvidas.</p></div>
+<div class="sp a d2"><div class="spn">2</div><h3 class="spt">Plano de cuidado</h3><p class="spx">Juntos, compreendemos suas necessidades e construímos um caminho terapêutico personalizado aos seus objetivos.</p></div>
+<div class="sp a d3"><div class="spn">3</div><h3 class="spt">Sessões regulares</h3><p class="spx">Sessões semanais de 50 minutos, em um espaço seguro e confidencial, para que você se desenvolva no seu ritmo.</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec sa" id="respiracao">
+<div class="c">
+<div class="sh a"><div class="sl"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>Respiração</div><h2 class="st">Uma pausa antes de continuar</h2><p class="sd">Respire com o círculo. Inspire quando ele crescer, segure, expire quando ele diminuir. Só isso.</p></div>
+<div class="breath">
+<div class="bwr"><div class="bwc" id="breathCircle" role="img" aria-label="Indicador visual de respiração guiada"></div><div class="bwg" id="breathGlow"></div></div>
+<p class="bwp" id="breathPhase" aria-live="polite">Toque para começar</p>
+<p class="bwt" id="breathTimer" aria-hidden="true"></p>
+<button class="bws" id="breathStart" aria-label="Iniciar exercício de respiração guiada">Começar</button>
+</div>
+<div class="bwa" id="breathAfter"><p class="bwat">Quando estiver pronto, podemos ir mais fundo juntos.</p><a href="#agendar" class="bp">Agendar conversa inicial<svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+</div>
+</section>
+
+<section class="sec" id="terapeuta">
+<div class="c"><div class="ag">
+<div class="aiw a"><div class="aim"><img src="https://images.unsplash.com/photo-1589655357553-586b06791991?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Willians Barbosa em seu consultório" loading="lazy"></div><div class="aid"></div></div>
+<div class="a d2">
+<div class="alb"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Sobre o terapeuta</div>
+<h2 class="at2">Por que faço o que faço</h2>
+<p class="atx">Acredito que cada pessoa carrega uma sabedoria interna que, muitas vezes, fica obscurecida pela dor, pelo medo ou pelo cansaço. Meu papel não é dar respostas prontas, mas caminhar ao seu lado enquanto você reencontra seus próprios caminhos.</p>
+<p class="atx">Com formação em Psicologia e especialização em Terapia Cognitivo-Comportamental, trabalho ajudando adultos a desenvolverem ferramentas emocionais para enfrentar ansiedade, burnout e questões relacionais — sempre com respeito, empatia e sigilo.</p>
+<p class="atx">Ofereço um espaço onde você pode ser quem realmente é, sem julgamentos, e onde o seu ritmo é sempre respeitado.</p>
+<div class="atgs"><span class="atg">Terapia Cognitivo-Comportamental</span><span class="atg">Abordagem Humanista</span><span class="atg">Mindfulness</span><span class="atg">Regulação Emocional</span></div>
+</div>
+</div></div>
+</section>
+
+<section class="sec sa" id="depoimentos">
+<div class="c">
+<div class="sh a"><div class="sl"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Relatos de quem passou por aqui</div><h2 class="st">Transformações reais</h2><p class="sd">Depoimentos de pessoas que decidiram cuidar de si mesmas e encontraram um novo modo de viver.</p></div>
+<div class="tg">
+<div class="tc a d1"><div class="tcs"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><p class="tcq">Antes eu travava em apresentações no trabalho, sentia o coração disparar e não conseguia pensar. Hoje, depois de alguns meses de terapia, consigo falar em público com mais calma e me sentir presente nas situações.</p><div class="tca"><div class="tcav">M</div><div><div class="tcn">M. S.</div><div class="tcd">34 anos, gestora comercial</div></div></div></div>
+<div class="tc a d2"><div class="tcs"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><p class="tcq">Cheguei completamente esgotado, achando que o problema era só falta de descanso. A terapia me ajudou a perceber padrões que me sabotavam e a estabelecer limites que eu não sabia que podia ter.</p><div class="tca"><div class="tcav">R</div><div><div class="tcn">R. L.</div><div class="tcd">41 anos, engenheiro de software</div></div></div></div>
+<div class="tc a d3"><div class="tcs"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><p class="tcq">O Willians tem uma forma muito sensível de acolher. Nunca me senti julgado. Aos poucos, fui entendendo minhas emoções e hoje consigo me relacionar melhor com minha família e comigo mesmo.</p><div class="tca"><div class="tcav">C</div><div><div class="tcn">C. A.</div><div class="tcd">28 anos, professor</div></div></div></div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="faq">
+<div class="c">
+<div class="sh a"><div class="sl"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>Perguntas frequentes</div><h2 class="st">Dúvidas que podem surgir</h2><p class="sd">É normal ter inseguranças antes de iniciar a terapia. Aqui estão as respostas para as perguntas mais comuns.</p></div>
+<div class="fql a">
+<div class="fqi"><button class="fqq" onclick="toggleFaq(this)">Como funciona a primeira sessão?<span class="fqic"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="fqa"><p>A primeira sessão é uma conversa acolhedora e sem compromisso. É o momento onde você pode compartilhar o que te motivou a buscar terapia, tirar todas as suas dúvidas sobre o processo, e sentir se há conforto em trabalhar comigo. Não há nenhuma obrigação de continuar após essa conversa.</p></div></div>
+<div class="fqi"><button class="fqq" onclick="toggleFaq(this)">Você atende online ou presencial?<span class="fqic"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="fqa"><p>Ofereço ambas as modalidades. O atendimento online é realizado via plataforma segura com criptografia ponta-a-ponta, garantindo total privacidade. O presencial acontece em consultório com ambiente acolhedor e reservado. Você escolhe o formato que se sentir mais confortável.</p></div></div>
+<div class="fqi"><button class="fqq" onclick="toggleFaq(this)">Qual a duração de cada sessão?<span class="fqic"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="fqa"><p>Cada sessão dura aproximadamente 50 minutos, com frequência semanal. A duração do processo terapêutico varia conforme suas necessidades e objetivos — trabalhamos no seu ritmo, sem pressa e sem pressão.</p></div></div>
+<div class="fqi"><button class="fqq" onclick="toggleFaq(this)">Quais são as formas de pagamento?<span class="fqic"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="fqa"><p>Aceito pagamento via PIX, cartão de crédito e débito, e transferência bancária. O pagamento é realizado ao final de cada sessão. Também emitio recibo para reembolso junto a planos de saúde, caso seu convênio cubra atendimentos psicológicos.</p></div></div>
+<div class="fqi"><button class="fqq" onclick="toggleFaq(this)">A terapia é confidencial?<span class="fqic"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="fqa"><p>Sim, totalmente. O sigilo profissional é um pilar ético da psicoterapia. Tudo o que é compartilhado nas sessões permanece estritamente confidencial. Há exceções previstas em lei apenas em situações de risco de vida, que são sempre conversadas com você antes.</p></div></div>
+<div class="fqi"><button class="fqq" onclick="toggleFaq(this)">Quanto tempo leva para sentir resultados?<span class="fqic"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button><div class="fqa"><p>Cada pessoa tem seu próprio tempo. Muitos relatam percepções já nas primeiras sessões, mas a transformação mais profunda se constrói gradualmente. O processo terapêutico não é uma corrida — é um caminho que respeita o seu momento.</p></div></div>
+</div>
+</div>
+</section>
+
+<section class="sec sa" id="outros">
+<div class="c">
+<div class="sh a"><div class="sl">Outros atendimentos</div><h2 style="font-size:clamp(1.4rem,2.5vw,1.8rem);letter-spacing:-.02em;margin-bottom:12px">Outras formas de cuidado</h2><p style="font-size:.95rem;color:var(--ts);max-width:520px;margin:0 auto;line-height:1.7">Além da terapia individual, ofereço outras abordagens para diferentes momentos da sua jornada.</p></div>
+<div class="og">
+<div class="oc a d1"><div class="oci"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/><path d="M12 5.67l1.06-1.06a5.5 5.5 0 0 1 7.78 7.78l-1.06 1.06" transform="translate(2,-2) scale(0.8)"/></svg></div><h3 class="oct">Psicoterapia de Casal</h3><p class="ocx">Um espaço para reconstruir a conexão e a comunicação no relacionamento.</p><a href="https://wa.me/5511974635062?text=Ol%C3%A1%2C%20Willians%20Barbosa%2C%20encontrei%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20psicoterapia%20de%20casal." class="ocl" target="_blank" rel="noopener" aria-label="Saiba mais sobre Psicoterapia de Casal">Saiba mais <span>→</span></a></div>
+<div class="oc a d2"><div class="oci"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3 class="oct">Terapia em Grupo</h3><p class="ocx">Compartilhe experiências e construa caminhos em um ambiente acolhedor e coletivo.</p><a href="https://wa.me/5511974635062?text=Ol%C3%A1%2C%20Willians%20Barbosa%2C%20encontrei%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20terapia%20em%20grupo." class="ocl" target="_blank" rel="noopener" aria-label="Saiba mais sobre Terapia em Grupo">Saiba mais <span>→</span></a></div>
+<div class="oc a d3"><div class="oci"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><h3 class="oct">Hipnoterapia</h3><p class="ocx">Acesse recursos do inconsciente para promover transformações profundas e duradouras.</p><a href="https://wa.me/5511974635062?text=Ol%C3%A1%2C%20Willians%20Barbosa%2C%20encontrei%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20hipnoterapia." class="ocl" target="_blank" rel="noopener" aria-label="Saiba mais sobre Hipnoterapia">Saiba mais <span>→</span></a></div>
+<div class="oc a d4"><div class="oci"><svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div><h3 class="oct">Musicoterapia</h3><p class="ocx">Utilize a música como ponte para expressão emocional e autoconhecimento.</p><a href="https://wa.me/5511974635062?text=Ol%C3%A1%2C%20Willians%20Barbosa%2C%20encontrei%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20musicoterapia." class="ocl" target="_blank" rel="noopener" aria-label="Saiba mais sobre Musicoterapia">Saiba mais <span>→</span></a></div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="agendar">
+<div class="c"><div class="sg">
+<div class="a">
+<div class="sl"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Agendar</div>
+<h2 class="sgt">Inicie sua jornada terapêutica</h2>
+<p class="sgx">Dar o primeiro passo exige coragem. Quando você estiver pronto, estarei aqui para acolher — sem pressa, sem julgamento.</p>
+<ul class="sgl">
+<li><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Conversa inicial sem compromisso</li>
+<li><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Horários flexíveis, incluindo noites</li>
+<li><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Online ou presencial — você escolhe</li>
+<li><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Ambiente 100% seguro e confidencial</li>
+</ul>
+<a href="https://wa.me/5511974635062?text=Ol%C3%A1%2C%20Willians%20Barbosa%2C%20encontrei%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20processo%20terap%C3%AAutico." class="bp" target="_blank" rel="noopener">Falar pelo WhatsApp<svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+<div class="scd a d2">
+<div class="scl">Sessão individual</div>
+<h3 class="sct2">Psicoterapia Individual</h3>
+<div class="scp">R$ 180</div>
+<div class="scn">por sessão de 50 minutos</div>
+<ul class="scl2">
+<li><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Sessão semanal de 50 minutos</li>
+<li><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Abordagem personalizada (TCC)</li>
+<li><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Online ou presencial</li>
+<li><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Plataforma segura com criptografia</li>
+<li><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Recibo para reembolso convênio</li>
+</ul>
+<a href="https://wa.me/5511974635062?text=Ol%C3%A1%2C%20Willians%20Barbosa%2C%20encontrei%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20processo%20terap%C3%AAutico." class="bp" target="_blank" rel="noopener" style="width:100%;justify-content:center">Agendar conversa inicial<svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+</div></div>
+</section>
+
+<section class="cts">
+<div class="ctsb"></div>
+<div class="c"><div class="ctsi a">
+<div class="ctsl"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>Você merece cuidar de si</div>
+<h2 class="ctst">O primeiro passo é o mais importante</h2>
+<p class="ctsd">Não é preciso estar no limite para buscar ajuda. A psicoterapia é um ato de cuidado consigo mesmo — e estamos aqui quando você decidir dar esse passo.</p>
+<a href="https://wa.me/5511974635062?text=Ol%C3%A1%2C%20Willians%20Barbosa%2C%20encontrei%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20processo%20terap%C3%AAutico." class="bct" target="_blank" rel="noopener">Inicie sua jornada terapêutica<svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+<p class="ctss">Conversa inicial sem compromisso · Online ou presencial</p>
+</div></div>
+</section>
+
+<footer class="foot">
+<div class="c">
+<div class="fg2">
+<div><div class="fb">Willians Barbosa</div><p class="fbs">Psicoterapeuta dedicado a promover um espaço seguro e acolhedor para adultos que buscam bem-estar emocional e transformação pessoal.</p></div>
+<div><div class="fct">Navegação</div><ul class="fls"><li><a href="#sobre">Sobre</a></li><li><a href="#processo">Processo</a></li><li><a href="#depoimentos">Depoimentos</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+<div><div class="fct">Atendimento</div><ul class="fls"><li><a href="#agendar">Agendar sessão</a></li><li>Online (plataforma segura)</li><li>Presencial (consultório)</li><li>Horários flexíveis</li></ul></div>
+<div><div class="fct">Contato</div><ul class="fls"><li><a href="https://wa.me/5511974635062?text=Ol%C3%A1%2C%20Willians%20Barbosa%2C%20encontrei%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20processo%20terap%C3%AAutico." target="_blank" rel="noopener">WhatsApp</a></li><li>contato@williansbarbosa.com</li><li>CRP 06/123456</li></ul></div>
+</div>
+<div class="fbot">
+<p class="fcp">&copy; 2025 Willians Barbosa — Psicoterapeuta. Todos os direitos reservados.</p>
+<div class="fle"><a href="#" onclick="openPrivacy(event)">Política de Privacidade</a><a href="#" onclick="openTerms(event)">Termos de Uso</a></div>
+</div>
+</div>
+</footer>
+
+<a href="https://wa.me/5511974635062?text=Ol%C3%A1%2C%20Willians%20Barbosa%2C%20encontrei%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20processo%20terap%C3%AAutico." class="wa" target="_blank" rel="noopener" aria-label="Contato via WhatsApp">
+<span class="wat">Fale comigo pelo WhatsApp</span>
+<span class="wab"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.05-.669.049-.199.149-.599.448-.747.497-.199.05-.349.05-.549-.149-.199-.199-.747-.747-1.077-.997-.199-.199-.449-.299-.599-.149-.199.149-.349.399-.449.599-.149.199-.349.299-.549.199-.199-.05-1.198-.448-2.578-.897-1.879-.599-2.777-.747-3.176-.697-.399.05-.699.199-.897.497-.199.299-.299.699-.299 1.198v2.578c0 .399.1.699.299.897.199.199.499.299.897.299.599 0 1.077-.199 1.077-.199s2.078.699 2.777.997c.699.299 1.198.499 1.578.399.399-.05.699-.299.897-.697.199-.399.299-.897.299-1.497v-2.777c0-.599-.1-1.077-.299-1.377-.199-.299-.499-.399-.897-.349z"/><path d="M12.03 2.01C6.51 2.01 2.01 6.51 2.01 12.03c0 1.877.528 3.627 1.444 5.127L2 22l4.958-1.444c1.465.872 3.168 1.378 4.993 1.378 5.52 0 10.02-4.5 10.02-10.02S17.55 2.01 12.03 2.01z"/></svg></span>
+</a>
+
+<div class="lgpd" id="lgpdBanner">
+<p class="lgt">Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="#" onclick="openPrivacy(event)">Política de Privacidade</a>.</p>
+<button class="lgo" onclick="acceptLgpd()">Aceitar</button>
+</div>
+
+<div class="mob" id="privacyModal">
+<div class="mod">
+<button class="moc" onclick="closePrivacy()" aria-label="Fechar"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+<h2 class="mot">Política de Privacidade</h2>
+<div class="mox"><p>Última atualização: Janeiro de 2025</p><h3>1. Dados que coletamos</h3><p>Coletamos apenas os dados que você voluntariamente nos fornece ao preencher formulários ou entrar em contato, como nome, e-mail e telefone. Não utilizamos cookies de rastreamento de terceiros.</p><h3>2. Como utilizamos seus dados</h3><p>Seus dados são utilizados exclusivamente para responder ao seu contato e agendar atendimentos. Não compartilhamos, vendemos ou transferimos suas informações pessoais a terceiros.</p><h3>3. Sigilo profissional</h3><p>Todas as informações compartilhadas durante as sessões de psicoterapia são protegidas pelo sigilo profissional, conforme o Código de Ética do Psicólogo (Resolução CFP 010/2005).</p><h3>4. Segurança dos dados</h3><p>Adotamos medidas técnicas e organizacionais adequadas para proteger seus dados pessoais contra acesso não autorizado, em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei 13.709/2018).</p><h3>5. Seus direitos</h3><p>Você tem o direito de acessar, corrigir, excluir ou portar seus dados pessoais a qualquer momento. Para exercer esses direitos, entre em contato pelo e-mail contato@williansbarbosa.com.</p><h3>6. Cookies</h3><p>Utilizamos apenas cookies essenciais para o funcionamento do site. Não utilizamos cookies de marketing ou rastreamento.</p></div>
+</div>
+</div>
+
+<div class="mob" id="termsModal">
+<div class="mod">
+<button class="moc" onclick="closeTerms()" aria-label="Fechar"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+<h2 class="mot">Termos de Uso</h2>
+<div class="mox"><p>Última atualização: Janeiro de 2025</p><h3>1. Sobre o serviço</h3><p>Este site tem caráter informativo e de divulgação profissional. O atendimento psicoterapêutico é realizado exclusivamente em sessões individuais, mediante agendamento prévio e contrato terapêutico.</p><h3>2. Limitação de responsabilidade</h3><p>As informações contidas neste site não substituem o atendimento psicoterapêutico individual. A psicoterapia é um processo colaborativo e seus resultados dependem de múltiplos fatores, incluindo o engajamento do paciente.</p><h3>3. Ética profissional</h3><p>O atendimento segue rigorosamente o Código de Ética do Psicólogo, incluindo os princípios de sigilo, não discriminação, autonomia e bem-estar do paciente. Não são feitas promessas de resultado ou garantia de tempo de tratamento.</p><h3>4. Propriedade intelectual</h3><p>Todo o conteúdo deste site, incluindo textos, imagens e design, é protegido por direitos autorais. A reprodução não autorizada é proibida.</p></div>
+</div>
+</div>
+
+<script>
+/* NAV */
+var nav=document.getElementById('nav');
+window.addEventListener('scroll',function(){nav.classList.toggle('sc',window.scrollY>40)});
+
+var navToggle=document.getElementById('navToggle'),mobileMenu=document.getElementById('mobileMenu');
+navToggle.addEventListener('click',function(){navToggle.classList.toggle('o');mobileMenu.classList.toggle('o');document.body.style.overflow=mobileMenu.classList.contains('o')?'hidden':''});
+function closeMenu(){navToggle.classList.remove('o');mobileMenu.classList.remove('o');document.body.style.overflow=''}
+
+/* SCROLL ANIM */
+var animEls=document.querySelectorAll('.a');
+var obs=new IntersectionObserver(function(e){e.forEach(function(en){if(en.isIntersecting){en.target.classList.add('v');obs.unobserve(en.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+animEls.forEach(function(el){obs.observe(el)});
+
+/* FAQ */
+function toggleFaq(btn){var it=btn.parentElement,wo=it.classList.contains('op');document.querySelectorAll('.fqi').forEach(function(f){f.classList.remove('op')});if(!wo)it.classList.add('op')}
+
+/* FEELING SELECTOR */
+var feelingMessages={ansiedade:'A ansiedade fala alto, mas não é a única voz dentro de você. Na terapia, aprendemos a escutar o que há além dela — e a encontrar pausa mesmo quando a mente acelera.',exaustao:'Estar exausto não é fraqueza. É o sinal de que você carregou muito, por muito tempo, sem ter um lugar para deixar o peso. A terapia pode ser esse lugar.',solidao:'Mesmo cercado de gente, a solidão pode ser esmagadora. Um espaço seguro onde você é ouvido de verdade — sem julgamentos, sem pressa — muda tudo.',confusao:'Sentir-se confuso sobre quem você é ou o que quer não é estar perdido — é estar em transformação. A terapia ajuda a encontrar clareza no meio da névoa.',sobrecarga:'Quando tudo pesa ao mesmo tempo, é difícil saber por onde começar. Na terapia, não precisamos resolver tudo de uma vez — começamos por onde dói mais.'};
+var prm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function selectFeeling(btn){
+var f=btn.getAttribute('data-feeling'),m=feelingMessages[f];if(!m)return;
+btn.style.background='var(--sage-100)';btn.style.borderColor='var(--sage-400)';btn.style.color='var(--sage-700)';
+var d=prm?0:300;
+setTimeout(function(){document.getElementById('feelingTags').classList.add('h');document.getElementById('feelingResponseText').textContent=m;setTimeout(function(){document.getElementById('feelingResponse').classList.add('v')},prm?0:200)},d)}
+function resetFeeling(){document.getElementById('feelingResponse').classList.remove('v');setTimeout(function(){document.getElementById('feelingTags').classList.remove('h');document.querySelectorAll('.fg').forEach(function(t){t.removeAttribute('style')})},prm?0:400)}
+
+/* BREATHING */
+var breathCircle=document.getElementById('breathCircle'),breathGlow=document.getElementById('breathGlow'),breathPhase=document.getElementById('breathPhase'),breathTimer=document.getElementById('breathTimer'),breathStart=document.getElementById('breathStart'),breathAfter=document.getElementById('breathAfter');
+var breathRunning=false,breathCycles=0,breathInterval=null;
+function breathCountdown(secs,el){var s=secs;el.textContent=s+'...';breathInterval=setInterval(function(){s--;if(s>0){el.textContent=s+'...'}else{el.textContent='';clearInterval(breathInterval)}},1000)}
+function breathInhale(){
+breathPhase.textContent='Inspire lentamente...';
+breathCircle.className='bwc';
+requestAnimationFrame(function(){breathCircle.style.width='var(--bmax)';breathCircle.style.height='var(--bmax)'});
+breathCountdown(4,breathTimer);setTimeout(breathHold,4000)}
+function breathHold(){
+breathPhase.textContent='Segure...';breathCircle.classList.add('hold');
+breathCountdown(7,breathTimer);setTimeout(breathExhale,7000)}
+function breathExhale(){
+breathPhase.textContent='Expire lentamente...';breathCircle.classList.remove('hold');breathCircle.classList.add('exhale');
+breathCircle.style.width='var(--bmin)';breathCircle.style.height='var(--bmin)';
+breathCountdown(8,breathTimer);setTimeout(function(){breathCycles++;if(breathCycles>=1){breathPhase.textContent='Bem feito.';breathTimer.textContent='';breathGlow.classList.remove('act');setTimeout(breathFinish,1500)}else{breathInhale()}},8000)}
+function breathFinish(){breathRunning=false;breathAfter.classList.add('v')}
+function startBreathing(){if(breathRunning)return;breathRunning=true;breathStart.classList.add('run');breathGlow.classList.add('act');breathInhale()}
+if(prm&&breathStart){breathStart.style.display='none';breathCircle.style.display='none';breathGlow.style.display='none';breathPhase.textContent='Respire com calma por alguns momentos.';setTimeout(function(){breathAfter.classList.add('v')},5000)}
+breathStart.addEventListener('click',startBreathing);
+
+/* LGPD */
+var lgpdBanner=document.getElementById('lgpdBanner');
+if(!localStorage.getItem('lgpdA')){setTimeout(function(){lgpdBanner.classList.add('sh')},2000)}
+function acceptLgpd(){localStorage.setItem('lgpdA','1');lgpdBanner.classList.remove('sh')}
+
+/* MODALS */
+function openPrivacy(e){e.preventDefault();document.getElementById('privacyModal').classList.add('op');document.body.style.overflow='hidden'}
+function closePrivacy(){document.getElementById('privacyModal').classList.remove('op');document.body.style.overflow=''}
+function openTerms(e){e.preventDefault();document.getElementById('termsModal').classList.add('op');document.body.style.overflow='hidden'}
+function closeTerms(){document.getElementById('termsModal').classList.remove('op');document.body.style.overflow=''}
+document.querySelectorAll('.mob').forEach(function(o){o.addEventListener('click',function(e){if(e.target===o){o.classList.remove('op');document.body.style.overflow=''}})});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.mob.op').forEach(function(m){m.classList.remove('op')});document.body.style.overflow=''}});
+
+/* SMOOTH SCROLL */
+document.querySelectorAll('a[href^="#"]').forEach(function(l){l.addEventListener('click',function(e){var t=document.querySelector(this.getAttribute('href'));if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-80,behavior:'smooth'})}})});
+</script>
+</body>
+</html>
