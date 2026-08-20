@@ -96,12 +96,6 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .hci svg{width:20px;height:20px;fill:none;stroke:var(--sage-600);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .hct strong{display:block;font-weight:600;color:var(--tp);font-size:.85rem}.hct span{font-size:.78rem;color:var(--tt)}
 
-/* TRUST */
-.trust{padding:40px 0;border-bottom:1px solid var(--bl)}
-.ti{display:flex;align-items:center;justify-content:center;gap:48px;flex-wrap:wrap}
-.tit{display:flex;align-items:center;gap:10px;font-size:.85rem;color:var(--tt);font-weight:500}
-.tit svg{width:18px;height:18px;fill:none;stroke:var(--sage-500);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
-
 /* SECTIONS */
 .sec{padding:100px 0}.sa{background:var(--bg2)}
 .sh{text-align:center;margin-bottom:64px}
@@ -300,22 +294,30 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 <a href="#sobre" onclick="closeMenu()">Sobre</a><a href="#processo" onclick="closeMenu()">Processo</a><a href="#depoimentos" onclick="closeMenu()">Depoimentos</a><a href="#faq" onclick="closeMenu()">FAQ</a><a href="#agendar" onclick="closeMenu()" class="bp" style="margin-top:16px">Agendar conversa</a>
 </div>
 
+<!-- ===== HERO (NOVA VERSÃO) ===== -->
 <section class="hero">
 <div class="hb hb1"></div><div class="hb hb2"></div>
 <div class="c"><div class="hg">
 <div class="hc">
-<div class="hbd"><span class="hd"></span>Atendimento disponível — online e presencial</div>
-<h1 class="ht">Recupere sua paz de espírito com terapia <i>acolhedora</i> e eficaz</h1>
-<p class="hs">Um espaço seguro para adultos que enfrentam ansiedade, burnout e esgotamento emocional encontrarem caminhos para uma vida mais leve e significativa.</p>
+<div class="hbd"><span class="hd"></span>Treinamento Clínico Neuro-Sensorial</div>
+<h1 class="ht">A sua mente não precisa de conselhos, ela precisa de uma <i>nova frequência</i>.</h1>
+<p class="hs">Um método imersivo que une a precisão da ciência cognitiva, o acesso subconsciente e a engenharia acústica para desativar a ansiedade direto na raiz biológica.</p>
 <div class="hcta">
-<a href="#agendar" class="bp">Agende sua conversa inicial<svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-<a href="#processo" class="bse">Como funciona<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></a>
+<a href="#agendar" class="bp">Iniciar meu treinamento<svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
 </div>
 </div>
+<!-- VÍDEO DO HERO — envie depois um arquivo chamado exatamente: video-manifesto.mp4 -->
 <div class="hic">
-<div class="hi"><img src="https://images.unsplash.com/photo-1503439234012-200cfe4c55bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Willians Barbosa — Psicoterapeuta" loading="eager"></div>
-<div class="hcd hcd1"><div class="hci" style="background:var(--sage-100)"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><div class="hct"><strong>+500 sessões realizadas</strong><span>Atendimento humanizado</span></div></div>
-<div class="hcd hcd2"><div class="hci" style="background:var(--sand-100)"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div class="hct"><strong>Atendimento individual</strong><span>100% personalizado</span></div></div>
+<div class="hi" style="aspect-ratio:16/9;background:var(--sage-900);display:flex;align-items:center;justify-content:center">
+<div id="videoPlaceholder" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:var(--sand-300);font-family:'Cormorant Garamond',serif;font-size:1.3rem;text-align:center;padding:24px;z-index:1">
+<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+<span>Vídeo de apresentação<br><span style="font-size:.85rem;font-family:'Inter',sans-serif;color:var(--sage-400)">em breve</span></span>
+</div>
+<video id="manifestoVideo" width="100%" height="100%" controls playsinline preload="auto" style="border-radius:var(--rl);object-fit:cover;box-shadow:var(--sx);display:none;position:relative;z-index:2">
+<source src="video-manifesto.mp4" type="video/mp4">
+Seu navegador não suporta a tag de vídeo.
+</video>
+</div>
 </div>
 </div></div>
 </section>
@@ -376,6 +378,25 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 <button class="bws" id="breathStart" aria-label="Iniciar exercício de respiração guiada">Começar</button>
 </div>
 <div class="bwa" id="breathAfter"><p class="bwat">Quando estiver pronto, podemos ir mais fundo juntos.</p><a href="#agendar" class="bp">Agendar conversa inicial<svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+</div>
+</section>
+
+<!-- ===== NOVA SEÇÃO: EXPERIÊNCIA — envie depois um arquivo chamado exatamente: inducao-foco.mp3 ===== -->
+<section class="sec sa" id="experiencia">
+<div class="c">
+<div class="sh a">
+<div class="sl"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>Experimente o Método</div>
+<h2 class="st">Ouça um fragmento da sua nova frequência</h2>
+<p class="sd">Feche os olhos por 60 segundos. Este é um pequeno spoiler das trilhas sonoras hipnóticas hiperpersonalizadas que você receberá para reconfigurar sua mente fora do consultório.</p>
+</div>
+<div class="a d2" style="max-width:600px;margin:0 auto;background:#fff;padding:24px;border-radius:var(--rm);box-shadow:var(--sl);border:1px solid var(--bl);display:flex;align-items:center;gap:16px">
+<button id="audioPlay" aria-label="Tocar indução de foco" style="width:56px;height:56px;border-radius:50%;background:var(--sage-600);color:#fff;display:flex;align-items:center;justify-content:center;border:none;cursor:pointer;flex-shrink:0"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></button>
+<div style="flex:1">
+<div id="audioTitle" style="font-weight:600;color:var(--tp);font-size:1.1rem;margin-bottom:4px;font-family:'Cormorant Garamond',serif">Indução de Foco e Descompressão</div>
+<div style="width:100%;height:4px;background:var(--sage-100);border-radius:2px;overflow:hidden"><div id="audioBar" style="width:0%;height:100%;background:var(--sage-500);transition:width .3s linear"></div></div>
+</div>
+</div>
+<audio id="trackAudio" src="inducao-foco.mp3" preload="metadata"></audio>
 </div>
 </section>
 
@@ -460,7 +481,6 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 </div>
 </div></div>
 </section>
-
 <section class="cts">
 <div class="ctsb"></div>
 <div class="c"><div class="ctsi a">
@@ -564,9 +584,7 @@ breathStart.addEventListener('click',startBreathing);
 /* LGPD */
 var lgpdBanner=document.getElementById('lgpdBanner');
 if(!localStorage.getItem('lgpdA')){setTimeout(function(){lgpdBanner.classList.add('sh')},2000)}
-function acceptLgpd(){localStorage.setItem('lgpdA','1');lgpdBanner.classList.remove('sh')}
-
-/* MODALS */
+function acceptLgpd(){localStorage.setItem('lgpdA','1');lgpdBanner.classList.remove('sh')}/* MODALS */
 function openPrivacy(e){e.preventDefault();document.getElementById('privacyModal').classList.add('op');document.body.style.overflow='hidden'}
 function closePrivacy(){document.getElementById('privacyModal').classList.remove('op');document.body.style.overflow=''}
 function openTerms(e){e.preventDefault();document.getElementById('termsModal').classList.add('op');document.body.style.overflow='hidden'}
@@ -576,6 +594,29 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.qu
 
 /* SMOOTH SCROLL */
 document.querySelectorAll('a[href^="#"]').forEach(function(l){l.addEventListener('click',function(e){var t=document.querySelector(this.getAttribute('href'));if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-80,behavior:'smooth'})}})});
+
+/* PLAYER DE ÁUDIO (SEÇÃO EXPERIÊNCIA) — funciona quando o arquivo inducao-foco.mp3 for enviado */
+var audioPlayBtn=document.getElementById('audioPlay'),trackAudio=document.getElementById('trackAudio'),audioBar=document.getElementById('audioBar'),audioTitle=document.getElementById('audioTitle');
+if(audioPlayBtn&&trackAudio){
+audioPlayBtn.addEventListener('click',function(){
+if(trackAudio.paused){trackAudio.play().catch(function(){audioTitle.textContent='Áudio disponível em breve'})}else{trackAudio.pause()}
+});
+trackAudio.addEventListener('timeupdate',function(){if(trackAudio.duration){audioBar.style.width=(trackAudio.currentTime/trackAudio.duration*100)+'%'}});
+trackAudio.addEventListener('play',function(){audioPlayBtn.innerHTML='<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>'});
+trackAudio.addEventListener('pause',function(){audioPlayBtn.innerHTML='<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>'});
+trackAudio.addEventListener('ended',function(){audioBar.style.width='0%'});
+trackAudio.addEventListener('error',function(){audioTitle.textContent='Áudio disponível em breve'});
+}
+
+/* VÍDEO DO HERO — aparece sozinho quando o arquivo video-manifesto.mp4 for enviado */
+var manifestoVideo=document.getElementById('manifestoVideo'),videoPh=document.getElementById('videoPlaceholder');
+if(manifestoVideo&&videoPh){
+function videoManifestoReady(){if(manifestoVideo.readyState>=1){videoPh.style.display='none';manifestoVideo.style.display='block'}}
+manifestoVideo.addEventListener('loadedmetadata',videoManifestoReady);
+manifestoVideo.addEventListener('loadeddata',videoManifestoReady);
+manifestoVideo.addEventListener('canplay',videoManifestoReady);
+window.addEventListener('load',videoManifestoReady);
+}
 </script>
 </body>
 </html>
